@@ -1,0 +1,24 @@
+###ggplot设置####
+  themeset=theme(axis.text.x = element_text(angle = 90))##设置x坐标旋转角度
+  themeset=themeset+theme(plot.title = element_text(hjust = 0.5,size=18)) #hjust=0.5 设置标题居中,size=18设置字号
+  
+  themeset=themeset+theme(axis.title.x=element_text(size=18),axis.title.y=element_text(size=16)) ##设置X坐标轴标题
+  themeset=themeset+theme(axis.text=element_text(size=16,face = "bold")) ##设置X坐标轴刻度显示，本次显示为16号字体，加粗
+  p=ggplot(data,aes(x,y))+geom_boxplot()+themeset+ggtitle("这里可以加主题") ## ggtitle和图形本身有关，不可以放在主题的themeset里
+  
+  
+  
+  
+  ###保存图形#####
+  ggsave(file=,plot=,height=12,width=14) #file =保存的文件名
+  
+  ######theme设置可以参考
+  https://blog.csdn.net/u014801157/article/details/24372531
+  
+  
+  
+  
+  
+  
+  
+  ####
